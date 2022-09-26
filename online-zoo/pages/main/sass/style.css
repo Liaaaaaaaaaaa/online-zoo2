@@ -201,6 +201,13 @@ h5 {
   margin: 0 0 34px;
 }
 
+.pets__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .pets__switch1,
 .pets__switch2 {
   width: 62px;

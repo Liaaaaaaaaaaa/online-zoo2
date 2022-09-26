@@ -77,7 +77,7 @@ h5 {
 }
 
 .promo {
-  background: url("../../../assets/images/promo-background.jpg");
+  background: url("./assets/images/promo-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 1600px;
@@ -155,7 +155,7 @@ h5 {
 }
 
 .backstage {
-  background: #FFFFFF url(../../../assets/images/backstage-backgroung-img.jpg) right no-repeat no-repeat;
+  background: #FFFFFF url(./assets/images/backstage-backgroung-img.jpg) right no-repeat no-repeat;
 }
 
 .backstage__wrapper {

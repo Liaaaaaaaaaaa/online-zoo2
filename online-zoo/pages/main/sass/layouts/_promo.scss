@@ -1,0 +1,31 @@
+.promo { 
+    background: $color-promo;
+    background-repeat: no-repeat;
+   background-size: contain;
+   width: 1600px;
+}
+
+
+.promo__wrapper {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 12px 200px 0 0;
+//     // height:780px;
+}
+
+.promo__content {
+    width: 465px;
+    // height: 465px;
+    background: $color-brand;
+    border-radius: 50%;
+    color: $color-light;
+margin-bottom: 60px;
+}
+
+.colortext {
+color: $color-yellow;
+}
+
+// .promo__button {
+// }

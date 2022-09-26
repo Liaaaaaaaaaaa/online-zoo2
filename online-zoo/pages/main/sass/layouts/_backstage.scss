@@ -1,0 +1,50 @@
+.backstage {
+    background:  $color-light $color-flower no-repeat;
+// width: 100%;
+
+}
+
+.backstage__wrapper {
+display: flex;
+height: 403px;
+padding: 140px 0 180px 0;
+}
+
+.backstage-img {
+    width: 609px;
+    height: 403px;
+    margin:0 87px 0 0;
+}
+
+.backstage__content {
+    display: flex;
+flex-direction: column;
+width: 552px;
+padding: 0;
+margin:0;
+color: $color-text;
+}
+
+.backstage__content1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 0 54px ;
+   
+}
+
+.title {
+    padding: 0;
+    margin:0;
+    
+}
+.backstage__content2 {
+    padding: 0;
+    margin:0;
+}
+
+.subtitle {
+    padding: 0;
+    margin:0 0 34px;
+}
+

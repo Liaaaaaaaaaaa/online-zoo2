@@ -1,7 +1,12 @@
 // 
 
-// .pets {
-// }
+.pets__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .pets__switch1,
 .pets__switch2 {
     width: 62px;
@@ -11,11 +16,10 @@
     color: $color-light;
 }
 
-// .button {
-// }
-// .button_colored {
-// }
-// .wrapper {
+// .pets__switch1 {
+//     position:relative;
+//     right: 5px;
+//     top:
 // }
 
 .layout-3-column {
@@ -38,8 +42,7 @@
 }
 
 
-// .pet {
-// }
+
 .pet-about {
     display: flex;
     justify-content: space-between;
@@ -67,6 +70,7 @@ p {
 }
 // .pet-description {
 // }
+
 .food-banan {
     width: 33px;
     height: 37px;

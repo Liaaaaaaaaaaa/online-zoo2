@@ -77,7 +77,7 @@ h5 {
 }
 
 .promo {
-  background: url("../../../assets/images/promo-background.jpg");
+  background: url("./online-zoo/assets/images/promo-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 1600px;

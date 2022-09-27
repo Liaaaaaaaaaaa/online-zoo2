@@ -10,12 +10,19 @@ $color-grey2: #767474;
 $color-text:  #333B41;
 $color-dark: #000000;
 $color-pick: rgba(253, 253, 255, 0.52);
-$color-flower:  url(./assets/images/backstage-backgroung-img.jpg) right no-repeat;
+$color-flower:  url("../../../assets/images/backstage-backgroung-img.jpg") right no-repeat;
+$color-flower2: url("../../../assets/images/background-pets(1).jpg");
+$color-flower3: url("../../../assets/images/background-pets(2).jpg");
+
 
 $color-yellow: #FFEE2E;
-// $color-borger: #FA6F32 100 %, #FE9013 100 %;
+
 $color-scroll: #F5F7F6;
+$color-testimonials: #F1F3F2;
+$color-borderT: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 $color-green: #4B9200;
+$color-scroll:#E5E5E5;
 
 $content-width:1160px;
 $max-width: 1600px;

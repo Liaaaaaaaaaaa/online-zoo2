@@ -1,0 +1,71 @@
+.pick-friend {
+    background: $color-background;
+    color: $color-text;
+    padding: 69px 0 100px;
+}
+
+.pick__wrapper {
+    background: $color-pick;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 1.44vw 52px 0 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pick-friend_title {
+    color: $color-brand2;
+    text-align: center;
+}
+
+// .pick-friend__description {
+//     color: $color-text;
+// }
+// .pick-friend__scheme {
+
+// }
+.scheme__container {
+    padding: 51px 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.scheme-element {
+    width: 168px;
+}
+
+.img-container1 {
+    width: 168px;
+    height: 168px;
+    background: #FFFFFF url("../../../assets/icons/scheme-img1.svg") 50%  no-repeat;
+  }
+
+  .img-container2 {
+    width: 168px;
+    height: 168px;
+    background: #FFFFFF url("../../../assets/icons/scheme-img2.svg") 50%  no-repeat;
+  }
+
+  .img-container3 {
+    width: 168px;
+    height: 168px;
+    background: #FFFFFF url("../../../assets/icons/scheme-img3.svg") 50%  no-repeat;
+  }
+
+
+
+// .scheme-description {
+// }
+.next {
+    width: 130px;
+    height: 168px;
+    background: url("../../../assets/icons/next.svg") 50% no-repeat;
+}
+
+.pick-friend__button {
+    padding: 0 0 59px;
+}

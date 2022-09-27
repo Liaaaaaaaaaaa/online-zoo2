@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <section class="promo">
+    <section class="promo" id="H">
         <header class="header">
             <div class="wrapper header__wrapper">
-                <a href="#promo" class="header__logo">
+                <a href="#H" class="header__logo">
                     <img src="./assets/icons/logo.svg" alt="logo" class="logo"></img>
                 </a>
                 <nav class="header__navigation">
@@ -42,7 +42,7 @@
 
     </section>
 
-    <section class="backstage">
+    <section class="backstage" id="map">
         <div class="wrapper backstage__wrapper">
             <img src="./assets/images/backstage-img.jpg" alt="backstage-pucture" class="backstage-img">
             <div class="backstage__content">
@@ -129,50 +129,43 @@
                     </div>
                 </div>
             </div>
-            <div >
+            <div>
                 <div class="button button_colored pets__switch2">&#8594</div>
             </div>
             <div class="pets__button">
-                <div class="button ">choose your favorite</div>
+                <a href="#map" ><div class="button ">choose your favorite</div></a>
             </div>
     </section>
 
     <section class="pick-friend">
-        <div class="wrapper">
+        <div class="wrapper pick__wrapper">
             <div class="pick-friend__description">
-                <h1>Pick and feed a friend</h1>
+                <h2 class="pick-friend_title">Pick and feed a friend</h2>
                 <h4>We know the animals bring you joy, and in these extraordinary times, we’re glad.</h4>
                 <h5>During a time when the COVID-19 epidemic is touching all of our lives, we’re proud and glad that
                     people around the world find joy in PetStory.</h5>
                 <h5>Even though the zoo has reopened, we need you now more than ever to help us deal with these
                     problems. Please consider a gift to our Emergency Support Fund.</h5>
             </div>
-
-            <div class="pick-friend__scheme">
-                <h3>How it works</h3>
-                <div class="scheme__container">
-                    <div class="scheme-element">
-                        <img src="./assets/icons/scheme-img1.svg" alt="scheme-img1" class="scheme-img">
-                        <p class="scheme-description">Pay with card</p>
-                    </div>
-                    <div class="next">
-                        <img src="./assets/icons/next.svg" alt="next" class="next-img">
-                    </div>
-                    <div class="scheme-element">
-                        <img src="./assets/icons/scheme-img2.svg" alt="scheme-img2" class="scheme-img">
-                        <p class="scheme-description">Payment goes to the zoo</p>
-                    </div>
-                    <div class="next">
-                        <img src="./assets/icons/next.svg" alt="next" class="next-img">
-                    </div>
-                    <div class="scheme-element">
-                        <img src="./assets/icons/scheme-img3.svg" alt="scheme-img3" class="scheme-img">
-                        <p class="scheme-description">Your favourite animal gets delicious dish</p>
-                    </div>
-                    <div class="pick-friend__button">
-                        <div class="button button_colored">Feed a friend now</div>
-                    </div>
+            <h3>How it works</h3>
+            <div class="scheme__container">
+                <div class="scheme-element">
+                    <div class="img-container1"></div>
+                    <p class="scheme-description">Pay with card</p>
                 </div>
+                <div class="next"></div>
+                <div class="scheme-element">
+                    <div class="img-container2"></div>
+                    <p class="scheme-description">Payment goes to the zoo</p>
+                </div>
+                <div class="next"></div>
+                <div class="scheme-element">
+                    <div class="img-container3"></div>
+                    <p class="scheme-description">Your favourite animal gets delicious dish</p>
+                </div>
+            </div>
+            <div class="pick-friend__button">
+                <div class="button button_colored">Feed a friend now</div>
             </div>
         </div>
     </section>
@@ -275,10 +268,10 @@
             </div>
 
             <div class="testimonials__scroll">
-
+                <div class="slider"></div>
             </div>
             <div class="tertimonials__button">
-                <div class="button button_colored">leave feedback</div>
+                <div class="button button_colored button-square">leave feedback</div>
             </div>
         </div>
     </section>
@@ -286,54 +279,53 @@
     <footer class="footer">
         <div class="wrapper">
             <div class="layout-3-columns">
-                <div class="footer__column1">
-                    <a href="#promo" class="header__logo">
+                <!-- <div class="footer__column1"> -->
+                    <a href="#H" class="header__logo">
                         <img src="./assets/icons/logo.svg" alt="logo" class="logo"></img>
                     </a>
                     <div class="footer__button">
-                        <div class="button button_colored">donate for volunteers</div>
+                        <div class="button button_colored button-square">donate for volunteers</div>
                     </div>
                     <ul class="footer__network">
-                        <li>
+                        <li class="network-list"><a href="#">
                             <img src="./assets/icons/facebook-icon.svg" alt="facebook" class="network__icon">
-                            <span class="network__text">Facebook</span>
+                            <span class="network__text">Facebook</span></a>
                         </li>
-                        <li>
+                     <li class="network-list"><a href="#">
                             <img src="./assets/icons/twitter-icon.svg" alt="twitter" class="network__icon">
-                            <span class="network__text">Facebook</span>
+                            <span class="network__text">Twitter</span></a>
                         </li>
-                        <li>
+                        <li class="network-list"><a href="#">
                             <img src="./assets/icons/instagram-icon.svg" alt="Instagram" class="network__icon">
                             <span class="network__text">Instagram</span>
-                        </li>
-                        <li>
+                        </a></li>
+                        <li class="network-list"><a href="#">
                             <img src="./assets/icons/youTube-icon.svg" alt="youTube" class="network__icon">
                             <span class="network__text">YouTube</span>
-                        </li>
+                        </a></li>
                     </ul>
-                </div>
+                <!-- </div> -->
                 <div class="footer__navigation footer__column2">
-                    <ul class="navigation">
-                        <li>About</li>
-                        <li>Map</li>
-                        <li>Zoos</li>
-                        <li>Donate</li>
-                        <li>Contact us</li>
+                    <ul class="navigation footer__nav">
+                        <li class="navigation__link">About</li>
+                        <li class="navigation__link">Map</li>
+                        <li class="navigation__link">Zoos</li>
+                        <li class="navigation__link">Contact us</li>
                     </ul>
                 </div>
-                <div class="footer__column3">
+                <!-- <div class="footer__column3"> -->
                     <div class="footer__subscribe ">
                         <h4 class="subscribe__title">Subscribe to our news</h4>
-                        <form action method="POST" class="subscribe__form">
+                        <form action method="POST" ">
                             <input type="email" name="email" placeholder="Enter your email">
-                            <button type="submit" class="subscribe__title">Submit</button>
+                            <button  type="submit" class="subscribe__submit">Submit</button>
                         </form>
                     </div>
                     <div class="disigner">
-                        <a href="">Designed by Alisa Samborskaya</a>
+                        <a href="">Designed by Alisa Samborskaya</a><br>
                         <a href="">©RSSchool & ©Yem Digital 2021</a>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </footer>

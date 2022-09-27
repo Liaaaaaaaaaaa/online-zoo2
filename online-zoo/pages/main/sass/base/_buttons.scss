@@ -18,7 +18,7 @@
 }
 
 .button-colored {
-    color: $color-brand2;
+    color: $color-brand;
 }
 
 .button:hover {
@@ -29,5 +29,8 @@
     padding: 0 0 100px 0;
 }
 
+.button-square {
+    border-radius: 5px;
+}
 
 

@@ -1,10 +1,21 @@
-// 
+// .pets {
+// display: grid;
+// grid-template: "pets__switch1 pets__wrapper
+// pets__switch2"
+// "pets__button pets__button pets__button";
+// }
 
 .pets__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+    display: grid;
     align-items: center;
+    justify-content: center;
+grid-template: "pets__switch1 layout-3-column pets__switch2" 
+"pets__button pets__button pets__button";
+grid-row-gap: 80px;
 }
 
 .pets__switch1,
@@ -14,19 +25,23 @@
     background: $color-brand;
     border-radius: 50%;
     color: $color-light;
+    margin: 0 20px;
+   
 }
 
-// .pets__switch1 {
-//     position:relative;
-//     right: 5px;
-//     top:
-// }
+.pets__switch1 {
+    grid-area: "pets__switch1" ;
+}
+.pets__switch2 {
+    grid-area: "pets__switch2";
+}
 
 .layout-3-column {
     display: grid;
     grid-template-columns: repeat (3, 366px);
     grid-template-rows: repeat (3, 426px);
     grid-gap: 30px;
+    grid-area: "layout-3-column";
 }
 
 .pet__container1 {
@@ -89,5 +104,6 @@ height: 38px;
 .pets__button {
   display: flex;
   justify-content: space-around;
+  grid-area: 2/2/3/3;
 }
 

@@ -77,10 +77,11 @@ h5 {
 }
 
 .promo {
-  background: url("./assets/images/promo-background.jpg");
+  background: url("../../../assets/images/promo-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 1600px;
+  margin: auto;
 }
 
 .promo__wrapper {
@@ -202,10 +203,11 @@ h5 {
 }
 
 .pets__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
+  justify-content: center;
+  grid-template: "pets__switch1 layout-3-column pets__switch2" "pets__button pets__button pets__button";
+  grid-row-gap: 80px;
 }
 
 .pets__switch1,
@@ -215,6 +217,15 @@ h5 {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-radius: 50%;
   color: #FFFFFF;
+  margin: 0 20px;
+}
+
+.pets__switch1 {
+  grid-area: "pets__switch1";
+}
+
+.pets__switch2 {
+  grid-area: "pets__switch2";
 }
 
 .layout-3-column {
@@ -222,6 +233,7 @@ h5 {
   grid-template-columns: repeat 3, 366px;
   grid-template-rows: repeat 3, 426px;
   grid-gap: 30px;
+  grid-area: "layout-3-column";
 }
 
 .pet__container1 {
@@ -281,6 +293,7 @@ p {
 .pets__button {
   display: flex;
   justify-content: space-around;
+  grid-area: 2/2/3/3;
 }
 
 .pick-friend {

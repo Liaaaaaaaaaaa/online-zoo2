@@ -1,5 +1,4 @@
 .button {
-    // width: 0.18625rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,22 +14,20 @@
     text-transform: uppercase;
     color: $color-light;
     transition: all .3s;
+
+    &-colored {
+        color: $color-brand;
+    }
+
+    &:hover {
+        color: $color-green;
+    }
 }
 
-.button-colored {
-    color: $color-brand;
-}
+    .promo__button {
+        padding: 0 0 100px 0;
+    }
 
-.button:hover {
-    color: $color-green;
-}
-
-.promo__button {
-    padding: 0 0 100px 0;
-}
-
-.button-square {
-    border-radius: 5px;
-}
-
-
+    .button-square {
+        border-radius: 5px;
+    }

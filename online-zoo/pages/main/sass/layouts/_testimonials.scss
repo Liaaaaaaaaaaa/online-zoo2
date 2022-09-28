@@ -1,6 +1,8 @@
 .testimonials {
     padding: 140px 0 180px;
     background: url("../../../assets/images/background-testimonials.jpg") right bottom no-repeat;
+    max-width: $max-width;
+    margin: auto;
 }
 
 .testimonials__title {

@@ -2,6 +2,8 @@
     background: $color-background;
     color: $color-text;
     padding: 69px 0 100px;
+    max-width: $max-width;
+    margin: auto;
 }
 
 .pick__wrapper {
@@ -42,6 +44,7 @@
     width: 168px;
     height: 168px;
     background: #FFFFFF url("../../../assets/icons/scheme-img1.svg") 50%  no-repeat;
+   display: inline-block;
   }
 
   .img-container2 {

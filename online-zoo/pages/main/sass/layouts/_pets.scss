@@ -1,7 +1,8 @@
 .pets {
     background: $color-flower2 left bottom no-repeat, $color-flower3 right bottom no-repeat;
     height: 100%;
-    width: 100%;
+    max-width: $max-width;
+    margin: auto;
 }
 
 .pets__wrapper {

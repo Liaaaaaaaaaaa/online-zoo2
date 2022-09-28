@@ -61,6 +61,10 @@ a:hover {
   color: orange;
 }
 
+img, a {
+  transition: all 0.2s ease-out 0.1s;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -93,6 +97,11 @@ a:hover {
 
 .button-square {
   border-radius: 5px;
+}
+
+.logo {
+  width: 82px;
+  height: 52px;
 }
 
 .promo {
@@ -300,7 +309,6 @@ a:hover {
   z-index: 2;
   position: relative;
   top: -80px;
-  transition: all;
 }
 
 .pet_title {

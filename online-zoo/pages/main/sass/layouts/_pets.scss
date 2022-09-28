@@ -5,10 +5,6 @@
 }
 
 .pets__wrapper {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // align-items: center;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -75,16 +71,16 @@
     line-height: 120%;
     color: $color-dark;
     padding: 8px 13px 14px 16px;
-    
+    // @extend %transition;
 }
 
 .pet-about:hover {
 background: $color-grey;
 opacity: 0.8;
 z-index: 2;
-position:relative;
+position: relative;
 top: -80px;
-transition: all;
+// @extend %transition;
 }
 
 .pet_title {
@@ -102,6 +98,7 @@ p {
 }
 
 // .pet-description {
+    
 // }
 
 .food-banan {

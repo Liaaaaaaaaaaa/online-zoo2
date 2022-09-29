@@ -22,7 +22,7 @@
     border: 2px solid #feabf3bd;
     border-radius: 20px;
     padding: 15px 15px 19px;
-
+    height: 391px;
 }
 
 .testimonials__indentification {
@@ -35,6 +35,7 @@
 }
 
 // .testimonials__person {
+//     // height: 63px;
 // }
 
 .name {
@@ -48,23 +49,23 @@
 .testimonials__text {
     color: $color-grey2;
     overflow: hidden;
-    height: 13.5vw;
+    height: 309px;
 }
 
 .testimonials__scroll {
     width: 600px;
-    height:7px;
+    height: 7px;
     color: $color-scroll;
     margin: 20px auto 40px;
     border: 1px solid #feabf3bd;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
 .slider {
-width: 115px;
-height: 100%;
-background: $color-brand2;
-border-radius: 5px;
+    width: 115px;
+    height: 100%;
+    background: $color-brand2;
+    border-radius: 5px;
 }
 
 // .tertimonials__button {

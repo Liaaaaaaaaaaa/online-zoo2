@@ -1,0 +1,26 @@
+.navigation {
+    display: flex;
+    color: $color-light;
+    padding: 0;
+}
+
+.navigation__link {
+    list-style: none;
+    padding: 0 58px 0 0;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    @extend %transition;
+
+    &:first-child {
+        color: $color-brand2;
+        margin-left: -300px;
+
+    }
+
+    &:last-child {
+        padding: 0;
+    }
+
+}

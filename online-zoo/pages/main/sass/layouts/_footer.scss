@@ -1,0 +1,85 @@
+.footer {
+    background: $color-dark;
+    color: $color-light;
+    padding: 41px 0 50px;
+    // height: 15vw;
+}
+
+.layout-3-columns {
+    display: grid;
+    grid-template-columns: 298px 1fr 367px;
+    grid-template-rows: 85px 1fr 134px;
+}
+
+// .footer__column1 {
+// }
+
+.header__logo {
+    grid-area: "logo";
+}
+// .logo {
+// }
+.footer__button {
+    grid-area: 2/1/3/2;
+}
+
+
+.footer__network {
+    grid-area: 3/1/4/2;
+align-self: end;
+justify-self: start;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+// .network__icon {
+// }
+.network-list {
+    margin: 0 0 10px 0;
+}
+
+.network-list:last-child{
+    margin:0px;
+}
+.footer__navigation {
+    grid-area: 1/2/4/3;
+    align-self: end;
+}
+.footer__nav {
+justify-content: flex-end;
+align-items: flex-end;
+margin:0;
+}
+// .footer__column2 {
+// }
+// .navigation {
+// }
+// .footer__column3 {
+// }
+.footer__subscribe {
+    grid-area: 1/3/2/4;
+    justify-self: end;
+}
+.subscribe__title {
+    margin:0 0 14px 0;
+}
+.subscribe__form {
+    margin: 0 10px 0 0;  
+}
+
+input[type=email]{
+    background: inherit;
+    color: #BDBDBD;  
+    outline: none;
+    // border: none;
+    border: 1px solid $color-brand;
+}
+.subscribe__submit {
+    color: $color-green;
+}
+.disigner {
+    grid-area: 3/3/4/4;
+    align-self: end;
+    justify-self: end;
+    color: $color-grey2;
+}

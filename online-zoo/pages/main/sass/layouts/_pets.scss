@@ -1,10 +1,17 @@
-// 
+.pets {
+    background: $color-flower2 left bottom no-repeat, $color-flower3 right bottom no-repeat;
+    height: 100%;
+    max-width: $max-width;
+    margin: auto;
+}
 
 .pets__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
+    justify-content: center;
+    grid-template: "pets__switch1 layout-3-column pets__switch2"
+        "pets__button pets__button pets__button";
+    grid-row-gap: 80px;
 }
 
 .pets__switch1,
@@ -14,23 +21,28 @@
     background: $color-brand;
     border-radius: 50%;
     color: $color-light;
+    margin: 0 20px;
 }
 
-// .pets__switch1 {
-//     position:relative;
-//     right: 5px;
-//     top:
-// }
+.pets__switch1 {
+    grid-area: "pets__switch1";
+}
+
+.pets__switch2 {
+    grid-area: "pets__switch2";
+}
 
 .layout-3-column {
     display: grid;
     grid-template-columns: repeat (3, 366px);
     grid-template-rows: repeat (3, 426px);
     grid-gap: 30px;
+    grid-area: "layout-3-column";
 }
 
 .pet__container1 {
     grid-area: 1/1/2/2;
+
 }
 
 .pet__container2 {
@@ -41,18 +53,35 @@
     grid-area: 1/3/2/4;
 }
 
-
+.pet__container1,
+.pet__container2,
+.pet__container3,
+.pet__container {
+    border: 1px solid $color-brand2;
+    border-radius: 5px;
+}
 
 .pet-about {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-style: normal;
     height: 60px;
-font-weight: 300;
-font-size: 15px;
-line-height: 120%;
-color: $color-dark;
-padding: 8px 13px 14px 16px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: $color-dark;
+    padding: 8px 13px 14px 16px;
+    // @extend %transition;
+}
+
+.pet-about:hover {
+background: $color-grey;
+opacity: 0.8;
+z-index: 2;
+position: relative;
+top: -80px;
+// @extend %transition;
 }
 
 .pet_title {
@@ -66,9 +95,11 @@ padding: 8px 13px 14px 16px;
 
 p {
     padding: 0;
-    margin: 0;  
+    margin: 0;
 }
+
 // .pet-description {
+    
 // }
 
 .food-banan {
@@ -78,11 +109,15 @@ p {
 
 .food-fish {
     width: 48px;
-height: 38px;
+    height: 38px;
 }
 
 .pets__button {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    grid-area: 2/2/3/3;
+    margin-bottom: 100px;
 }
+
+
 

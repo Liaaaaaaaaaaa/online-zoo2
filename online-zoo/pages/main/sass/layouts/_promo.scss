@@ -1,8 +1,9 @@
 .promo { 
     background: $color-promo;
     background-repeat: no-repeat;
-   background-size: contain;
-   width: 1600px;
+   background-size: cover;
+   max-width: $max-width ;
+    margin:  auto;
 }
 
 

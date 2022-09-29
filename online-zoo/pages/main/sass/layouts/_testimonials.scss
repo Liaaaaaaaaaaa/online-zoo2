@@ -23,6 +23,7 @@
     border-radius: 20px;
     padding: 15px 15px 19px;
     height: 391px;
+    // overflow: scroll-y;
 }
 
 .testimonials__indentification {
@@ -48,8 +49,11 @@
 
 .testimonials__text {
     color: $color-grey2;
-    overflow: hidden;
+    overflow-y: scroll;
     height: 309px;
+    &::-webkit-scrollbar {
+       width: 0; 
+    }
 }
 
 .testimonials__scroll {

@@ -489,7 +489,7 @@ a:hover {
 .backstage__content {
   display: flex;
   flex-direction: column;
-  width: 552px;
+  width: 465px;
   padding: 0;
   margin: 0;
   color: #333B41;
@@ -504,7 +504,7 @@ a:hover {
 
 .title {
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .backstage__content2 {
@@ -642,7 +642,7 @@ p {
   background: rgba(253, 253, 255, 0.52);
   backdrop-filter: blur(2px);
   border-radius: 20px;
-  padding: 1.44vw 52px 0 99px;
+  padding: 40px 52px 0 99px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -652,6 +652,20 @@ p {
 .pick-friend_title {
   color: #FE9013;
   text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.pick-friend__description {
+  padding: 0 0 60px 0;
+}
+.pick-friend__description h4 {
+  margin: 0 0 40px 0;
+}
+.pick-friend__description h5 {
+  margin: 0 0 10px 0;
+}
+.pick-friend__description h5:last-child {
+  width: 863px;
 }
 
 .scheme__container {
@@ -683,6 +697,10 @@ p {
   width: 168px;
   height: 168px;
   background: #FFFFFF url("../../../assets/icons/scheme-img3.svg") 50% no-repeat;
+}
+
+.scheme-description {
+  padding: 30px 0 0 0;
 }
 
 .next {
@@ -741,8 +759,11 @@ p {
 
 .testimonials__text {
   color: #767474;
-  overflow: hidden;
+  overflow-y: scroll;
   height: 309px;
+}
+.testimonials__text::-webkit-scrollbar {
+  width: 0;
 }
 
 .testimonials__scroll {

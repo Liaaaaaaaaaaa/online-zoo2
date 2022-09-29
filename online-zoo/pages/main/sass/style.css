@@ -719,6 +719,7 @@ p {
   border: 2px solid rgba(254, 171, 243, 0.7411764706);
   border-radius: 20px;
   padding: 15px 15px 19px;
+  height: 391px;
 }
 
 .testimonials__indentification {
@@ -741,7 +742,7 @@ p {
 .testimonials__text {
   color: #767474;
   overflow: hidden;
-  height: 13.5vw;
+  height: 309px;
 }
 
 .testimonials__scroll {

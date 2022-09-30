@@ -1,9 +1,9 @@
-.promo { 
+.promo {
     background: $color-promo;
     background-repeat: no-repeat;
-   background-size: cover;
-   max-width: $max-width ;
-    margin:  auto;
+    background-position: bottom;
+    max-width: $max-width ;
+    margin: auto;
 }
 
 
@@ -12,7 +12,7 @@
     align-items: flex-end;
     flex-direction: column;
     padding: 12px 200px 0 0;
-//     // height:780px;
+    //     // height:780px;
 }
 
 .promo__content {
@@ -21,11 +21,11 @@
     background: $color-brand;
     border-radius: 50%;
     color: $color-light;
-margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .colortext {
-color: $color-yellow;
+    color: $color-yellow;
 }
 
 // .promo__button {

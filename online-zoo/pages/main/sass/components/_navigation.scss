@@ -16,11 +16,12 @@
     &:first-child {
         color: $color-brand2;
         margin-left: -300px;
-
     }
 
     &:last-child {
         padding: 0;
     }
-
+    
+    @extend %hover-brand 
 }
+

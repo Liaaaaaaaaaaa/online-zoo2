@@ -35,6 +35,10 @@
         &:last-child {
             width: 863px;
         }
+        a {
+            text-decoration: underline;
+            text-decoration-color: $color-brand2;
+        }
     }
 }
 

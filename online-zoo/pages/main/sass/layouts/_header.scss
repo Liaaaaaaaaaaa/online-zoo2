@@ -1,24 +1,50 @@
 .header {
     background: $color-dark;
     padding: 14px 0;
-  
+    @include media-small_desktop {
+        padding:0;
+    }
+
 }
 
 .header__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     @extend %hover-brand;
+    @include media-small_desktop {
+        // justify-content: flex-end;
+    }
 }
 
+.header__navigation {
+//   display: flex;
+//   flex-shrink: 0;
 
-   
+margin-left: -200px;
+@include media-tablet {
+    display:none;
+}
+@include media-mobile {
+    display:none;
+}
+}
 
+.header__logo {
+    @include media-small_desktop {
+       padding-right: 68px;
+    }
+}
 
 .signature {
     color: $color-light;
     font-weight: 500;
     line-height: 140%;
     text-decoration: none;
+    @include media-tablet {
+        display:none;
+    }
+    @include media-mobile {
+        display:none;
+    }
 }

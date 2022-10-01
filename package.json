@@ -4,8 +4,7 @@
   "description": "Private repository for @liaaaaaaaaaaa",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch online-zoo/pages/main/sass/style.scss online-zoo/pages/main/sass/style.css",
-    "style2": "sass --watch online-zoo/pages/donate/sass/style.scss online-zoo/pages/donate/sass/style.css",
+    "style": "sass --watch online-zoo/pages/main/sass/_style1.scss online-zoo/pages/main/sass/_style1.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

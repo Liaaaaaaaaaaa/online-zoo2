@@ -1,6 +1,9 @@
 .wrapper {
     max-width: $content-width;
     margin:  auto;
-    
+    @include media-small_desktop {
+        // max-width: $tablet-content;
+        padding: 0 30px;
+    }
 }
 

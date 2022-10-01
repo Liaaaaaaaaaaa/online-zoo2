@@ -17,16 +17,14 @@ linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248,
 $color-green: #4B9200;
 $color-scroll:#E5E5E5;
 
-//background-img
-$color-promo: url("../../../assets/images/promo-background.jpg");
-$color-flower:  url("../../../assets/images/backstage-backgroung-img.jpg") right no-repeat;
-$color-flower2: url("../../../assets/images/background-pets(1).jpg");
-$color-flower3: url("../../../assets/images/background-pets(2).jpg");
 
 //-----width
-$content-width:1160px;
 $max-width: 1600px;
-$tablet-width: 1000px;
-$mobile-big-width:640px;
-$mobile-small-width: 320px;
 
+$small_desktop-width: 1000px;
+$tablet-width:640px;
+$mobile-width: 320px;
+
+// ----width-content
+$content-width:1160px;
+$tablet-content: 940px;

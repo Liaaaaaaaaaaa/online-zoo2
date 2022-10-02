@@ -29,7 +29,19 @@
 
 .promo__button {
     padding: 0 0 100px 0;
+    @include media-small_desktop {
+        padding-bottom: 47px;
+    }
+    @include media-tablet {
+        align-self: flex-start;
+        padding-bottom: 0;
+    }
+    @include media-mobile {
+        position: absolute;
+        top: 241px;
+    }
 }
+
 
 .button-square {
     border-radius: 5px;

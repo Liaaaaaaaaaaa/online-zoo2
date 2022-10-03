@@ -580,7 +580,7 @@ a {
     padding: 0 30px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 640px) {
   .wrapper {
     padding: 0 20px;
   }
@@ -1081,6 +1081,11 @@ p {
   max-width: 1600px;
   margin: auto;
 }
+@media (max-width: 1000px) {
+  .pick-friend {
+    padding: 30px 30px 50px;
+  }
+}
 
 .pick__wrapper {
   background: rgba(253, 253, 255, 0.52);
@@ -1092,15 +1097,30 @@ p {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 1000px) {
+  .pick__wrapper {
+    padding: 30px 48px 50px;
+  }
+}
 
 .pick-friend_title {
   color: #FE9013;
   text-align: center;
   margin: 0 0 30px 0;
 }
+@media (max-width: 1000px) {
+  .pick-friend_title {
+    margin: 0 0 20px 0;
+  }
+}
 
 .pick-friend__description {
   padding: 0 0 60px 0;
+}
+@media (max-width: 1000px) {
+  .pick-friend__description {
+    padding: 0 0 40px 0;
+  }
 }
 .pick-friend__description h4 {
   margin: 0 0 40px 0;
@@ -1122,6 +1142,11 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
+}
+@media (max-width: 1000px) {
+  .scheme__container {
+    padding: 40px 0 70px;
+  }
 }
 
 .scheme-element {
@@ -1167,6 +1192,11 @@ p {
   max-width: 1600px;
   margin: auto;
 }
+@media (max-width: 1000px) {
+  .testimonials {
+    padding: 100px 0 140px;
+  }
+}
 
 .testimonials__title {
   text-align: center;
@@ -1179,6 +1209,11 @@ p {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
 }
+@media (max-width: 1000px) {
+  .layout-4-column {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .testimonial__block {
   background: #F1F3F2;
@@ -1186,6 +1221,12 @@ p {
   border-radius: 20px;
   padding: 15px 15px 19px;
   height: 391px;
+}
+
+@media (max-width: 1000px) {
+  .testimonial__block4 {
+    display: none;
+  }
 }
 
 .testimonials__indentification {
@@ -1265,6 +1306,12 @@ input[type=range]::-webkit-slider-runnable-track {
   display: grid;
   grid-template-columns: 298px 1fr 367px;
   grid-template-rows: 85px 1fr 134px;
+}
+@media (max-width: 1000px) {
+  .layout-3-columns {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .header__logo {

@@ -2,13 +2,17 @@
     background: $color-dark;
     color: $color-light;
     padding: 41px 0 50px;
-    // height: 15vw;
+    
 }
 
 .layout-3-columns {
     display: grid;
     grid-template-columns: 298px 1fr 367px;
     grid-template-rows: 85px 1fr 134px;
+    @include media-small_desktop {
+        grid-template-columns: repeat( 3, 1fr);
+        grid-template-rows: repeat( 2, 1fr);
+     }
 }
 
 // .footer__column1 {

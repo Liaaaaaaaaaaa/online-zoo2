@@ -4,9 +4,9 @@ html {
 }
 
 body {
+    // display: flex;
     font-size: 1.6rem;
     font-family: 'Roboto', Verdana, sans-serif;
-
 }
 
 h1 {
@@ -35,7 +35,6 @@ h5 {
 } 
 
     
-
 img {
     @extend %transition;
 }
@@ -50,6 +49,7 @@ a {
     @extend %transition;
 }
 
-a:hover {
-    color: $color-green;
-}
+// a:hover {
+//     color: $color-green;
+// }
+

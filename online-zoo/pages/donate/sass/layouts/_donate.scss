@@ -1,0 +1,179 @@
+.donations {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    padding: 40px 0 180px;
+}
+
+.about-help {
+    color: $color-light;
+    // padding: 0 30px;
+}
+
+// .help_title {
+// }
+// .help_text {
+// }
+.donations-info {
+    color: $color-brand2;
+    padding: 0 0 40px;
+}
+
+.donation-cheme {
+    padding: 40px 92px 62px;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+// .pick-friend__description {
+// }
+// .pick-friend_title {
+// }
+.cheme-donate {
+    padding: 0 229px 48px 0;
+    // 253px;
+    display: flex;
+    justify-content: end;
+}
+
+.cheme-block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 11px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.number-eat {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.eat-description {
+    padding: 11px 0 0;
+}
+
+.cheme-block2 {
+    width: 14px;
+    height: 246px;
+    display: flex;
+    align-items: center;
+    margin-right: 64px;
+}
+
+.cheme-block3 {
+    background: url(("../../../assets/icons/panda_widget1.svg"));
+    width: 284px;
+    height: 246px;
+}
+
+// .amound-line {
+//     padding: 0 45px 0 8px;
+// }
+
+.amound {
+    margin: 0 0 10px;
+}
+
+.donation-line {
+    background: url("../../../assets/icons/progress_bar.jpg") no-repeat;
+    width: 100%;
+    height: 40px;
+}
+
+.donation-money {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    padding: 0 45px 0 0;
+}
+
+.size-money {
+    list-style: none;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.size-money2000 {
+    position: relative;
+    left: -15px;
+}
+.size-money1000 {
+    position: relative;
+    left: -20px;
+}
+.size-money500 {
+    position: relative;
+    left: -25px;
+}
+.size-money250 {
+    position: relative;
+    left: -20px;
+}
+
+.size-money100 {
+    position: relative;
+    left: -10px;
+}
+
+.size-money50 {
+    position: relative;
+    left: 0px;
+}
+
+.size-money25 {
+    position: relative;
+    left: 20px;
+}
+
+// .money-activ {
+// }
+.period_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.donation-input {
+    margin: 50px 0 25px;
+    width: 268px;
+    height: 54px;
+    border: 1px solid $color-grey2;
+ display: flex;
+ justify-content: center;
+}
+
+// .img-dollar {
+// }
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    width: 240px;
+    height: 54px;
+    background: inherit;
+    border: none;
+    outline: none;
+}
+
+.period-pay {
+    padding: 0 0 30px;
+    label:first-child {
+        margin-right: 50px;
+
+    }
+}

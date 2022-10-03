@@ -3,9 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 298px;
-    background: $color-brand2;
     height: 54px;
-    border-radius: 25px;
     border: none;
     font-size: 1.6rem;
     font-style: normal;
@@ -13,21 +11,39 @@
     line-height: 140%;
     text-transform: uppercase;
     color: $color-light;
-    transition: all .3s;
+    background: $color-brand2;
+    border-radius: 25px;
 
-    &-colored {
-        color: $color-brand;
+    &_colored {
+        background: $color-brand;
     }
 
     &:hover {
-        color: $color-green;
+        background: $color-hover-button;
+    }
+
+    &:active {
+        background: $color-green;
     }
 }
 
-    .promo__button {
-        padding: 0 0 100px 0;
+.promo__button {
+    padding: 0 0 100px 0;
+    @include media-small_desktop {
+        padding-bottom: 47px;
     }
+    @include media-tablet {
+        align-self: flex-start;
+        padding-bottom: 0;
+    }
+    @include media-mobile {
+        position: absolute;
+        top: 241px;
+        left: 11px;
+    }
+}
 
-    .button-square {
-        border-radius: 5px;
-    }
+
+.button-square {
+    border-radius: 5px;
+}

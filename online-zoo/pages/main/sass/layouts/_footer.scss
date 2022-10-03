@@ -17,39 +17,65 @@
 .header__logo {
     grid-area: "logo";
 }
+
 // .logo {
 // }
 .footer__button {
     grid-area: 2/1/3/2;
+    padding: 35px 0 44px;
 }
 
 
 .footer__network {
     grid-area: 3/1/4/2;
-align-self: end;
-justify-self: start;
-margin: 0;
-padding: 0;
-list-style: none;
-}
-// .network__icon {
-// }
-.network-list {
-    margin: 0 0 10px 0;
+    align-self: end;
+    justify-self: start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
 }
 
-.network-list:last-child{
-    margin:0px;
+.network-list {
+    margin: 0 0 10px 0;
+
+    a {
+        display: flex;
+        flex-direction: row;
+        width: 111px;
+        align-items: center;
+    }
+
+    @extend %hover-network;
 }
+
+
+.network__icon {
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.network-list:last-child {
+    margin: 0px;
+}
+
 .footer__navigation {
     grid-area: 1/2/4/3;
     align-self: end;
 }
+
 .footer__nav {
-justify-content: flex-end;
-align-items: flex-end;
-margin:0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
 }
+
 // .footer__column2 {
 // }
 // .navigation {
@@ -60,26 +86,36 @@ margin:0;
     grid-area: 1/3/2/4;
     justify-self: end;
 }
+
 .subscribe__title {
-    margin:0 0 14px 0;
-}
-.subscribe__form {
-    margin: 0 10px 0 0;  
+    margin: 0 0 14px 0;
 }
 
-input[type=email]{
-    background: inherit;
-    color: #BDBDBD;  
-    outline: none;
-    // border: none;
-    border: 1px solid $color-brand;
+.subscribe__form {
+    margin: 0 10px 0 0;
 }
+
+form {
+    input[type=email] {
+        background: $color-dark;
+        color: #BDBDBD;
+        outline: none;
+        border: 1px solid $color-brand2;
+    }
+}
+
 .subscribe__submit {
     color: $color-green;
+
+    &:hover {
+        background: none;
+    }
 }
+
 .disigner {
     grid-area: 3/3/4/4;
     align-self: end;
     justify-self: end;
     color: $color-grey2;
+    @extend %hover-network;
 }

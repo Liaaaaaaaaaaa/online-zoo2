@@ -1,0 +1,30 @@
+
+// //----------------------- pages 1
+// // Abstract 
+// @import "../../main/sass/abstract/normalize";
+// @import "../../main/sass/abstract/constants";
+// @import "../../main/sass/abstract/placeholders";
+// @import "../../main/sass/abstract/mixins";
+
+// //Base
+// @import "../../main/sass/base/base";
+// @import "../../main/sass/base/buttons";
+
+
+// // Components
+// @import "../../main/sass/components/navigation";
+// @import "../../main/sass/components/logo";
+
+// //Layouts
+// @import "../../main/sass/layouts/wrapper";
+// @import "../../main/sass/layouts/header";
+// @import "../../main/sass/layouts/promo";
+// @import "../../main/sass/layouts/pick-friend";
+// @import "../../main/sass/layouts/footer";
+
+//----------------pages 2 
+@import "./layouts/promo2";
+@import "./layouts/donate";
+
+
+

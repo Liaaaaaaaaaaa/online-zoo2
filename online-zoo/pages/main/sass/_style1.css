@@ -436,20 +436,12 @@ a {
   .promo__button {
     position: absolute;
     top: 241px;
+    left: 11px;
   }
 }
 
 .button-square {
   border-radius: 5px;
-}
-
-.pets__switch1,
-.pets__switch2 {
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  color: #FFFFFF;
-  margin: 0 20px;
 }
 
 .hamburger__line, .hamburger:after, .hamburger:before {
@@ -669,7 +661,7 @@ a {
 }
 @media (max-width: 1000px) {
   .promo__wrapper {
-    padding: 0 147px 47px 0;
+    padding: -10px 147px 47px 0;
   }
 }
 @media (max-width: 640px) {
@@ -707,7 +699,7 @@ a {
   .promo__content {
     width: 237px;
     margin-bottom: 0;
-    bottom: 0;
+    bottom: 10;
   }
   .promo__content h1 {
     font-size: 5.43rem;
@@ -732,20 +724,60 @@ a {
 }
 
 .backstage {
-  background: #FFFFFF url("../../../assets/images/backstage-backgroung-img.jpg") right no-repeat no-repeat;
+  background: #FFFFFF no-repeat;
   max-width: 1600px;
   margin: auto;
+}
+@media (max-width: 1000px) {
+  .backstage {
+    background: #FFFFFF no-repeat;
+  }
+}
+@media (max-width: 640px) {
+  .backstage {
+    background: #FFFFFF url("../../../assets/images/backstage-backgroung-img.jpg") right no-repeat no-repeat;
+    background-size: 25% 100%;
+  }
+}
+@media (max-width: 320px) {
+  .backstage {
+    background-size: 105px 217px;
+    background-position: top 40px right -65px;
+  }
 }
 
 .backstage__wrapper {
   display: flex;
   padding: 140px 0 180px 0;
 }
+@media (max-width: 1000px) {
+  .backstage__wrapper {
+    padding: 100px 0 142px 0;
+  }
+}
+@media (max-width: 320px) {
+  .backstage__wrapper {
+    padding: 104px 0 40px 0;
+  }
+}
 
 .backstage-img {
+  background-image: url("../../../assets/images/backstage-img.jpg");
   width: 609px;
   height: 403px;
   margin: 0 87px 0 0;
+}
+@media (max-width: 1000px) {
+  .backstage-img {
+    margin: 0 31px 0 0;
+    padding: 0 80px 0 50px;
+    background-position: center;
+  }
+}
+@media (max-width: 640px) {
+  .backstage-img {
+    display: none;
+  }
 }
 
 .backstage__content {
@@ -756,6 +788,11 @@ a {
   margin: 0;
   color: #333B41;
 }
+@media (max-width: 320px) {
+  .backstage__content {
+    width: 100%;
+  }
+}
 
 .backstage__content1 {
   display: flex;
@@ -763,20 +800,41 @@ a {
   padding: 0;
   margin: 0 0 54px;
 }
-
-.title {
+@media (max-width: 320px) {
+  .backstage__content1 {
+    margin: 0 0 20px;
+  }
+}
+.backstage__content1 .title {
   padding: 0;
   margin: 0 0 20px 0;
+}
+@media (max-width: 320px) {
+  .backstage__content1 .title {
+    width: 100%;
+    font-size: 2.4rem;
+    margin: 0 0 10px 0;
+  }
+}
+.backstage__content1 .title p {
+  line-height: 130%;
 }
 
 .backstage__content2 {
   padding: 0;
   margin: 0;
 }
-
-.subtitle {
+.backstage__content2 .subtitle {
   padding: 0;
   margin: 0 0 34px;
+}
+@media (max-width: 320px) {
+  .backstage__content2 .subtitle {
+    margin: 0 0 10px;
+  }
+}
+.backstage__content2 p {
+  line-height: 140%;
 }
 
 .pets {
@@ -785,41 +843,178 @@ a {
   max-width: 1600px;
   margin: auto;
 }
+@media (max-width: 1000px) {
+  .pets {
+    background: url("../../../assets/images/background-pets(1).jpg") left bottom no-repeat, url("../../../assets/images/background-pets(2).jpg") right-bottom no-repeat;
+    background-size: 20% 202px;
+  }
+}
+@media (max-width: 320px) {
+  .pets {
+    background-size: 25% 4%;
+  }
+}
 
 .pets__wrapper {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template: "pets__switch1 layout-3-column pets__switch2" "pets__button pets__button pets__button";
-  grid-row-gap: 80px;
+  grid-template: "layout-3-column" "pets__button";
+  grid-row-gap: 50px;
+}
+@media (max-width: 640px) {
+  .pets__wrapper {
+    grid-row-gap: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .pets__wrapper {
+    grid-row-gap: 20px;
+  }
 }
 
 .layout-3-column {
   display: grid;
-  grid-template-columns: repeat 3, 366px;
-  grid-template-rows: repeat 3, 426px;
+  grid-template: "pets__switch1 panda eagles gorillas pets__switch2" "pets__switch1 alligators cheetahs penquins pets__switch2";
   grid-gap: 30px;
   grid-area: "layout-3-column";
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .layout-3-column {
+    grid-template-areas: "panda panda eagles eagles cheetahs cheetahs" "pets__switch1 pets__switch1 pets__switch1 pets__switch2 pets__switch2 pets__switch2" "gorillas gorillas alligators alligators penquins penquins";
+  }
+}
+@media (max-width: 640px) {
+  .layout-3-column {
+    overflow: hidden;
+    grid-gap: 11px 28px;
+  }
+}
+@media (max-width: 320px) {
+  .layout-3-column {
+    grid-gap: 20px 28px;
+    grid-template-areas: "panda" "eagles" "gorillas" "alligators";
+  }
+}
+
+@media (max-width: 1000px) {
+  .pet {
+    width: 294px;
+  }
+}
+@media (max-width: 640px) {
+  .pet {
+    width: 284px;
+  }
+}
+@media (max-width: 320px) {
+  .pet {
+    width: 100%;
+  }
+}
+
+.pets__switch1,
+.pets__switch2 {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+@media (max-width: 320px) {
+  .pets__switch1,
+.pets__switch2 {
+    display: none;
+  }
+}
+
+.pets__switch1 {
+  grid-area: 1/1/4/2;
+  margin: 0 0 30px 0;
+}
+@media (max-width: 1000px) {
+  .pets__switch1 {
+    grid-area: 2/3/3/4;
+    justify-self: start;
+  }
+}
+@media (max-width: 640px) {
+  .pets__switch1 {
+    grid-area: 2/2/3/3;
+    margin: 0 0 8px 0;
+  }
+}
+
+.pets__switch2 {
+  grid-area: "pets__switch2";
+  grid-area: 1/5/4/6;
+  margin: 0 0 30px 0;
+}
+@media (max-width: 1000px) {
+  .pets__switch2 {
+    grid-area: 2/4/3/5;
+    justify-self: end;
+  }
+}
+@media (max-width: 640px) {
+  .pets__switch2 {
+    grid-area: 2/3/3/4;
+    margin: 0 0 8px 0;
+  }
 }
 
 .pet__container1 {
-  grid-area: 1/1/2/2;
+  grid-area: panda;
 }
 
 .pet__container2 {
-  grid-area: 1/2/2/3;
+  grid-area: eagles;
 }
 
 .pet__container3 {
-  grid-area: 1/3/2/4;
+  grid-area: gorillas;
 }
-
 .pet__container1,
 .pet__container2,
 .pet__container3,
 .pet__container {
   border: 1px solid #FE9013;
   border-radius: 5px;
+}
+
+.pet__container4 {
+  grid-area: alligators;
+}
+.pet__container4 .alligators {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .pet__container4 .alligators {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  .pet__container4 .Two-toed {
+    display: none;
+  }
+}
+
+.pet__container5 {
+  grid-area: cheetahs;
+}
+@media (max-width: 320px) {
+  .pet__container5 {
+    display: none;
+  }
+}
+
+.pet__container6 {
+  grid-area: penquins;
+}
+@media (max-width: 320px) {
+  .pet__container6 {
+    display: none;
+  }
 }
 
 .pet-about {
@@ -870,8 +1065,13 @@ p {
 .pets__button {
   display: flex;
   justify-content: space-around;
-  grid-area: 2/2/3/3;
+  grid-area: "pets__button";
   margin-bottom: 100px;
+}
+@media (max-width: 320px) {
+  .pets__button {
+    margin-bottom: 60px;
+  }
 }
 
 .pick-friend {

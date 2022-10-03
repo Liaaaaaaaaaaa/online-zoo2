@@ -39,19 +39,11 @@
     @include media-mobile {
         position: absolute;
         top: 241px;
+        left: 11px;
     }
 }
 
 
 .button-square {
     border-radius: 5px;
-}
-
-.pets__switch1,
-.pets__switch2 {
-    width: 62px;
-    height: 62px;
-    border-radius: 50%;
-    color: $color-light;
-    margin: 0 20px;
 }

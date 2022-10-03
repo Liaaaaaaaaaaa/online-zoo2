@@ -32,7 +32,7 @@
     padding: 12px 200px 0 0;
 
     @include media-small_desktop {
-        padding: 0 147px 47px 0;
+        padding: -10px 147px 47px 0;
     }
 
     @include media-tablet {
@@ -68,7 +68,7 @@
     @include media-tablet {
         width: 237px;
         margin-bottom: 0;
-        bottom: 0;
+        bottom: 10;
 
         h1 {
             font-size: 5.43rem;

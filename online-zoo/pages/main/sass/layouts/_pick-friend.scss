@@ -7,6 +7,9 @@
     @include media-small_desktop {
         padding: 30px 30px 50px; 
     }
+    @include media-small_desktop {
+        padding: 20px 0; 
+    }
 }
 
 .pick__wrapper {
@@ -21,6 +24,9 @@
     @include media-small_desktop {
         padding: 30px 48px 50px;
     }
+    @include media-tablet {
+        padding: 10px 20px 0;
+    }
 }
 
 .pick-friend_title {
@@ -30,24 +36,42 @@
     @include media-small_desktop {
         margin: 0 0 20px 0;
     }
+    @include media-tablet {
+        font-size: 4.2rem; 
+    }
 }
 
 .pick-friend__description {
     padding: 0 0 60px 0;
+    width: 100%;
 
     @include media-small_desktop {
         padding: 0 0 40px 0;
     }
+    @include media-tablet {
+        padding: 10px 0 30px;
+    }
 
     h4 {
         margin: 0 0 40px 0;
+        @include media-tablet {
+            font-size: 2.2rem; 
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
        
     }
 
     h5 {
         margin: 0 0 10px 0;
+        width: 100%;
         &:last-child {
             width: 863px;
+
+            @include media-tablet {
+                width: 100%;
+            }
+         
         }
         a {
             text-decoration: underline;
@@ -68,10 +92,24 @@
     @include media-small_desktop {
         padding: 40px 0 70px;
     }
+    @include media-tablet {
+        padding: 20px 0 40px;
+        justify-content: flex-start;
+    }
+    
 }
 
 .scheme-element {
     width: 168px;
+    @include media-tablet {
+        margin-right: 42px;
+     }
+}
+
+.scheme-element:last-child {
+    @include media-tablet {
+        margin-right: 0;
+     }
 }
 
 .img-container1 {
@@ -103,6 +141,23 @@
     width: 130px;
     height: 168px;
     background: url("../../../assets/icons/next.svg") 50% no-repeat;
+
+    @include media-tablet {
+        background: url("../../../assets/icons/pick-arrow.svg") 50% no-repeat;
+        background-position: top;
+        position: absolute;
+        top: 46.5%;
+        left: 24%;
+        width: 15%;
+    }
+}
+
+.next2 {
+    @include media-tablet {
+     
+        left: 58%;
+      
+    }
 }
 
 .pick-friend__button {

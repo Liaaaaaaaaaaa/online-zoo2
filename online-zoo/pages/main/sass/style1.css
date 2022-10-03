@@ -1,6 +1,6 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
-   ========================================================================== */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -11,7 +11,7 @@ html {
 }
 
 /* Sections
-   ========================================================================== */
+
 /**
  * Remove the margin in all browsers.
  */
@@ -1416,6 +1416,13 @@ input[type=range]::-webkit-slider-runnable-track {
   padding: 41px 0 50px;
 }
 
+@media (max-width: 640px) {
+  .footer {
+    padding: 12px 0;
+  }
+}
+
+
 .layout-3-columns {
   display: grid;
   grid-template-columns: 298px 1fr 367px;
@@ -1428,14 +1435,51 @@ input[type=range]::-webkit-slider-runnable-track {
   }
 }
 
-.header__logo {
-  grid-area: "logo";
+@media (max-width: 640px) {
+  .layout-3-columns {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .header__logo {
+    grid-area: 1/1/2/2;
+  }
+}
+
+.footer__logo {
+  border: 1px solid #FFFFFF;
+}
+@media (max-width: 640px) {
+  .footer__logo {
+    width: 82px;
+    height: 52px;
+    margin-bottom: 32px;
+  }
+}
+
+.footer-logo-text {
+  font-size: 1.9rem;
+}
+
+.footer-logo__img {
+  right: 50px;
+
 }
 
 .footer__button {
   grid-area: 2/1/3/2;
   padding: 35px 0 44px;
 }
+
+@media (max-width: 640px) {
+  .footer__button {
+    grid-area: 2/1/3/2;
+    padding: 0px;
+  }
+}
+
 
 .footer__network {
   grid-area: 3/1/4/2;
@@ -1446,6 +1490,15 @@ input[type=range]::-webkit-slider-runnable-track {
   list-style: none;
 }
 
+@media (max-width: 640px) {
+  .footer__network {
+    grid-area: 1/2/3/3;
+    justify-self: flex-end;
+    align-self: flex-start;
+  }
+}
+
+
 .network-list {
   margin: 0 0 10px 0;
 }
@@ -1455,6 +1508,13 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 111px;
   align-items: center;
 }
+
+@media (max-width: 640px) {
+  .network-list a {
+    width: 100%;
+  }
+}
+
 
 .network__icon {
   background: rgba(196, 196, 196, 0.5);
@@ -1467,14 +1527,37 @@ input[type=range]::-webkit-slider-runnable-track {
   margin-right: 12px;
 }
 
+@media (max-width: 640px) {
+  .network__icon {
+    margin: 0 0 20px;
+  }
+}
+
+
 .network-list:last-child {
   margin: 0px;
 }
+
+
+@media (max-width: 640px) {
+  .network__text {
+    display: none;
+    width: 0;
+  }
+}
+
 
 .footer__navigation {
   grid-area: 1/2/4/3;
   align-self: end;
 }
+
+@media (max-width: 640px) {
+  .footer__navigation {
+    grid-area: 3/1/4/2;
+  }
+}
+
 
 .footer__nav {
   justify-content: flex-end;
@@ -1486,6 +1569,13 @@ input[type=range]::-webkit-slider-runnable-track {
   grid-area: 1/3/2/4;
   justify-self: end;
 }
+
+@media (max-width: 640px) {
+  .footer__subscribe {
+    display: none;
+  }
+}
+
 
 .subscribe__title {
   margin: 0 0 14px 0;
@@ -1516,8 +1606,16 @@ form input[type=email] {
   color: #767474;
 }
 
+@media (max-width: 640px) {
+  .disigner {
+    grid-area: 3/2/4/4;
+  }
+}
+
+
 .remove {
   display: none;
 }
 
-/*# sourceMappingURL=_style1.css.map */
+/*# sourceMappingURL=style1.css.map */
+

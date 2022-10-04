@@ -11,12 +11,18 @@
         background-size: 20%;
         background-position: 105% 115%;
     }
+    @include media-mobile   {
+        padding: 30px 0 60px;
+     }
 }
 
 .testimonials__title {
     text-align: center;
     color: $color-text;
     padding: 0 0 47px;
+    @include media-mobile   {
+        padding: 0 0 20px;
+     }
 }
 
 .layout-4-column {
@@ -46,6 +52,9 @@
         height: 17.1vw;
         padding: 15px 29px 8px 12px;
     }
+    @include media-mobile   {
+        height: 109px;;
+     }
 }
 .testimonial__block:nth-child(3n) {
     @include media-tablet {

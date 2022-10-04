@@ -1482,7 +1482,12 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .tertimonials__button {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+@media (max-width: 640px) {
+  .tertimonials__button {
+    justify-content: center;
+  }
 }
 
 .footer {

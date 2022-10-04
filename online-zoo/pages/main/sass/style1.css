@@ -1,6 +1,6 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
-   ========================================================================== */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -11,7 +11,7 @@ html {
 }
 
 /* Sections
-   ========================================================================== */
+
 /**
  * Remove the margin in all browsers.
  */
@@ -367,6 +367,11 @@ h3 {
   font-weight: 400;
   font-size: 3.6rem;
   line-height: 130%;
+}
+@media (max-width: 320px) {
+  h3 {
+    font-size: 2.4rem;
+  }
 }
 
 h4 {
@@ -1086,9 +1091,14 @@ p {
     padding: 30px 30px 50px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 640px) {
   .pick-friend {
     padding: 20px 0;
+  }
+}
+@media (max-width: 320px) {
+  .pick-friend {
+    padding: 20px 10px;
   }
 }
 
@@ -1128,6 +1138,11 @@ p {
     font-size: 4.2rem;
   }
 }
+@media (max-width: 320px) {
+  .pick-friend_title {
+    font-size: 2.4rem;
+  }
+}
 
 .pick-friend__description {
   padding: 0 0 60px 0;
@@ -1153,6 +1168,11 @@ p {
     margin: 0 0 20px 0;
   }
 }
+@media (max-width: 320px) {
+  .pick-friend__description h4 {
+    font-size: 1.8rem;
+  }
+}
 .pick-friend__description h5 {
   margin: 0 0 10px 0;
   width: 100%;
@@ -1163,6 +1183,11 @@ p {
 @media (max-width: 640px) {
   .pick-friend__description h5:last-child {
     width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .pick-friend__description h5:last-child {
+    display: none;
   }
 }
 .pick-friend__description h5 a {
@@ -1188,6 +1213,12 @@ p {
     justify-content: flex-start;
   }
 }
+@media (max-width: 320px) {
+  .scheme__container {
+    flex-direction: column;
+    padding: 0 0 30px;
+  }
+}
 
 .scheme-element {
   width: 168px;
@@ -1197,10 +1228,20 @@ p {
     margin-right: 42px;
   }
 }
+@media (max-width: 320px) {
+  .scheme-element {
+    margin: 20px 0 20px;
+  }
+}
 
 @media (max-width: 640px) {
   .scheme-element:last-child {
     margin-right: 0;
+  }
+}
+@media (max-width: 320px) {
+  .scheme-element:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -1226,6 +1267,11 @@ p {
 .scheme-description {
   padding: 30px 0 0 0;
 }
+@media (max-width: 320px) {
+  .scheme-description {
+    padding: 10px 0 20px;
+  }
+}
 
 .next {
   width: 130px;
@@ -1236,11 +1282,49 @@ p {
   .next {
     background: url("../../../assets/icons/pick-arrow.svg") 50% no-repeat;
     background-position: top;
-    position: relative;
+    position: absolute;
+    top: 46.5%;
+    left: 24%;
     width: 15%;
   }
 }
 
+@media (max-width: 320px) {
+  .next {
+    transform: rotate(90deg);
+    width: 55%;
+    top: 37%;
+    left: 32%;
+  }
+}
+
+@media (max-width: 640px) {
+  .next2 {
+    left: 58%;
+  }
+}
+@media (max-width: 640px) and (max-width: 320px) {
+  .next2 {
+    top: 57%;
+    left: 32%;
+  }
+}
+
+<<<<<<< HEAD
+=======
+@media (max-width: 640px) {
+  .next2 {
+    left: 58%;
+  }
+}
+@media (max-width: 640px) and (max-width: 320px) {
+  .next2 {
+    top: 57%;
+    left: 32%;
+  }
+}
+
+>>>>>>> 54caa645e3b115d0ac3f1c2e0d024719a6384b17
 .pick-friend__button {
   padding: 0 0 59px;
 }
@@ -1263,11 +1347,21 @@ p {
     background-position: 105% 115%;
   }
 }
+@media (max-width: 320px) {
+  .testimonials {
+    padding: 30px 0 60px;
+  }
+}
 
 .testimonials__title {
   text-align: center;
   color: #333B41;
   padding: 0 0 47px;
+}
+@media (max-width: 320px) {
+  .testimonials__title {
+    padding: 0 0 20px;
+  }
 }
 
 .layout-4-column {
@@ -1300,6 +1394,11 @@ p {
   .testimonial__block {
     height: 17.1vw;
     padding: 15px 29px 8px 12px;
+  }
+}
+@media (max-width: 320px) {
+  .testimonial__block {
+    height: 109px;
   }
 }
 
@@ -1413,6 +1512,13 @@ input[type=range]::-webkit-slider-runnable-track {
   padding: 41px 0 50px;
 }
 
+@media (max-width: 640px) {
+  .footer {
+    padding: 12px 0;
+  }
+}
+
+
 .layout-3-columns {
   display: grid;
   grid-template-columns: 298px 1fr 367px;
@@ -1425,14 +1531,76 @@ input[type=range]::-webkit-slider-runnable-track {
   }
 }
 
-.header__logo {
-  grid-area: "logo";
+@media (max-width: 640px) {
+  .layout-3-columns {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (max-width: 320px) {
+  .layout-3-columns {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__logo {
+    grid-area: 1/1/2/2;
+  }
+}
+@media (max-width: 320px) {
+  .header__logo {
+    grid-area: 1/1/2/2;
+    margin: 0px 0 10px;
+  }
+}
+
+.footer__logo {
+  border: 1px solid #FFFFFF;
+}
+@media (max-width: 640px) {
+  .footer__logo {
+    width: 82px;
+    height: 52px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__logo {
+    border: none;
+    width: 320px;
+    margin: 0;
+  }
+}
+
+.footer-logo-text {
+  font-size: 1.9rem;
+}
+
+.footer-logo__img {
+  right: 50px;
+
 }
 
 .footer__button {
   grid-area: 2/1/3/2;
   padding: 35px 0 44px;
 }
+
+@media (max-width: 640px) {
+  .footer__button {
+    grid-area: 2/1/3/2;
+    padding: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__button {
+    grid-area: 3/1/4/2;
+  }
+}
+
 
 .footer__network {
   grid-area: 3/1/4/2;
@@ -1443,6 +1611,23 @@ input[type=range]::-webkit-slider-runnable-track {
   list-style: none;
 }
 
+@media (max-width: 640px) {
+  .footer__network {
+    grid-area: 1/2/3/3;
+    justify-self: flex-end;
+    align-self: flex-start;
+  }
+}
+@media (max-width: 320px) {
+  .footer__network {
+    grid-area: 2/1/3/2;
+    align-self: flex-start;
+    display: flex;
+    justify-self: center;
+  }
+}
+
+
 .network-list {
   margin: 0 0 10px 0;
 }
@@ -1452,6 +1637,18 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 111px;
   align-items: center;
 }
+
+@media (max-width: 640px) {
+  .network-list a {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .network-list {
+    flex-direction: column;
+  }
+}
+
 
 .network__icon {
   background: rgba(196, 196, 196, 0.5);
@@ -1464,25 +1661,73 @@ input[type=range]::-webkit-slider-runnable-track {
   margin-right: 12px;
 }
 
+@media (max-width: 640px) {
+  .network__icon {
+    margin: 0 0 20px;
+  }
+}
+@media (max-width: 320px) {
+  .network__icon {
+    margin: 0 20px 0;
+  }
+}
+
+
 .network-list:last-child {
   margin: 0px;
 }
+
+
+@media (max-width: 640px) {
+  .network__text {
+    display: none;
+    width: 0;
+  }
+}
+
 
 .footer__navigation {
   grid-area: 1/2/4/3;
   align-self: end;
 }
 
+@media (max-width: 640px) {
+  .footer__navigation {
+    grid-area: 3/1/4/2;
+  }
+}
+@media (max-width: 320px) {
+  .footer__navigation {
+    grid-area: 5/1/6/2;
+    width: 100%;
+  }
+}
+
+
 .footer__nav {
   justify-content: flex-end;
   align-items: flex-end;
   margin: 0;
+  width: 300px;
+  justify-content: space-between;
 }
 
 .footer__subscribe {
   grid-area: 1/3/2/4;
   justify-self: end;
 }
+
+@media (max-width: 640px) {
+  .footer__subscribe {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .footer__subscribe {
+    grid-area: 4/1/5/2;
+  }
+}
+
 
 .subscribe__title {
   margin: 0 0 14px 0;
@@ -1513,8 +1758,29 @@ form input[type=email] {
   color: #767474;
 }
 
+@media (max-width: 640px) {
+  .disigner {
+    grid-area: 3/2/4/4;
+  }
+}
+@media (max-width: 320px) {
+  .disigner {
+    grid-area: 4/1/5/2;
+    width: 76%;
+    justify-self: end;
+  }
+  .disigner a {
+    margin-bottom: 13px;
+  }
+}
+
+
 .remove {
   display: none;
 }
 
 /*# sourceMappingURL=style1.css.map */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 54caa645e3b115d0ac3f1c2e0d024719a6384b17

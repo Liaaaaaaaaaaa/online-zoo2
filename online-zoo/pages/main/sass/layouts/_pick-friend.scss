@@ -119,16 +119,16 @@
 .scheme-element {
     width: 168px;
     @include media-tablet {
-        margin-right: 42px;
+        margin-right: 20px;
      }
      @include media-mobile{
-        margin:  20px 0 20px; 
+        margin:  20px 0  20px; 
     }
 }
 
 .scheme-element:last-child {
     @include media-tablet   {
-        margin-right: 0;
+        margin-right: 0px;
      }
      @include media-mobile   {
         margin-bottom: 0;
@@ -168,33 +168,37 @@
     width: 130px;
     height: 168px;
     background: url("../../../assets/icons/next.svg") 50% no-repeat;
-
-    @include media-tablet {
-        background: url("../../../assets/icons/pick-arrow.svg") 50% no-repeat;
-        background-position: top;
-        position: absolute;
-        top: 46.5%;
-        left: 24%;
-        width: 15%;
+  }
+  @media (max-width: 640px) {
+    .next {
+      background: url("../../../assets/icons/pick-arrow.svg") 50% no-repeat;
+      background-position: top;
+      position: absolute;
+      top: 46.5%;
+      left: 24%;
+      width: 15%;
     }
-    @include media-mobile{
+  }
+  @media (max-width: 320px) {
+    .next {
       transform: rotate(90deg);
       width: 55%;
       top: 37%;
-     left: 32%;
+      left: 32%;
     }
-}
-
-.next2 {
-    @include media-tablet {
-        left: 58%;
-        @include media-mobile{
-            top: 57%;
-            left: 32%;
-          }
+  }
+  
+  @media (max-width: 640px) {
+    .next2 {
+      left: 58%;
     }
-}
-
+  }
+  @media (max-width: 640px) and (max-width: 320px) {
+    .next2 {
+      top: 57%;
+      left: 32%;
+    }
+  }
 .pick-friend__button {
     padding: 0 0 59px;
 }

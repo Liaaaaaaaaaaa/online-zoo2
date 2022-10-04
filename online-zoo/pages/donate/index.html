@@ -5,30 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../donate/sass/_style2.css">
+    <link rel="stylesheet" href="../donate/sass/style2.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700&display=swap" rel="stylesheet" />
 
     <title>Online-zoo</title>
 </head>
 
 <body>
+
     <header class="header" id="H">
-        <div class="wrapper header__wrapper">
-            <a href="../../index.html" class="header__logo">
-                <img src="../../assets/icons/logo.svg" alt="logo" class="logo"></img>
-            </a>
-            <nav class="header__navigation">
-                <ul class="navigation">
-                    <li class="navigation__link"><a href="../../index.html">About</a> </li>
-                    <li class="navigation__link"><a href="#">Map</a></li>
-                    <li class="navigation__link"><a href="#">Zoos</a> </li>
-                    <li class="navigation__link"><a href="#" class="donate">Donate</a> </li>
-                    <li class="navigation__link"><a href="#">Contact us</a> </li>
-                </ul>
-            </nav>
-            <a href="https://www.figma.com/" class="signature">Designed by ©</a>
+        <div class="wrapper ">
+            <div class="header__wrapper">
+                <a href="../../index.html" class="header__logo">
+                    <div class="logo">
+                        <h1 class="logo__text">PetStory online<img src="../../assets/icons/logo-img.svg" alt="logo"
+                                class="logo__img"></img></h1>
+
+                    </div>
+                </a>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__link"><a href="../../index.html">About</a> </li>
+                        <li class="navigation__link"><a href="#">Map</a></li>
+                        <li class="navigation__link"><a href="#">Zoos</a> </li>
+                        <li class="navigation__link"><a href="./pages/donate/index.html" class="donate">Donate</a> </li>
+                        <li class="navigation__link"><a href="#">Contact us</a> </li>
+                    </ul>
+                </nav>
+                <a href="https://www.figma.com/" class="signature">Designed by ©</a>
+                <span class="hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
+            </div>
         </div>
     </header>
+
     <section class="promo promo2">
         <div class="wrapper promo2__wrapper">
         </div>
@@ -97,10 +108,15 @@
         <div class="wrapper">
             <div class="layout-3-columns">
                 <a href="../../index.html" class="header__logo">
-                    <img src="../../assets/icons/logo.svg" alt="logo" class="logo"></img>
+                    <div class="logo">
+                        <h1 class="logo__text">PetStory online<img src="../../assets/icons/logo-img.svg" alt="logo"
+                                class="logo__img"></img></h1>
+                    </div>
                 </a>
                 <div class="footer__button">
-                    <div class="button button_colored button-square donate">donate for volunteers</div>
+                    <a href="../donate/index.html">
+                        <div class="button button_colored button-square donate">donate for volunteers</div>
+                    </a>
                 </div>
                 <ul class="footer__network">
                     <li class="network-list"><a href="https://facebook.com/">
@@ -150,5 +166,6 @@
     </footer>
     <script src="./script.js"></script>
 </body>
+
 
 </html>

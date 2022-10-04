@@ -1236,16 +1236,8 @@ p {
   .next {
     background: url("../../../assets/icons/pick-arrow.svg") 50% no-repeat;
     background-position: top;
-    position: absolute;
-    top: 46.5%;
-    left: 24%;
+    position: relative;
     width: 15%;
-  }
-}
-
-@media (max-width: 640px) {
-  .next2 {
-    left: 58%;
   }
 }
 
@@ -1407,7 +1399,12 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .tertimonials__button {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+@media (max-width: 640px) {
+  .tertimonials__button {
+    justify-content: center;
+  }
 }
 
 .footer {
@@ -1520,4 +1517,4 @@ form input[type=email] {
   display: none;
 }
 
-/*# sourceMappingURL=_style1.css.map */
+/*# sourceMappingURL=style1.css.map */

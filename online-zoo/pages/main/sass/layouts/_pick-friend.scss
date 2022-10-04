@@ -145,17 +145,16 @@
     @include media-tablet {
         background: url("../../../assets/icons/pick-arrow.svg") 50% no-repeat;
         background-position: top;
-        position: absolute;
-        top: 46.5%;
-        left: 24%;
+        position: relative;
         width: 15%;
+        
     }
 }
 
 .next2 {
     @include media-tablet {
      
-        left: 58%;
+        // left: 58%;
       
     }
 }

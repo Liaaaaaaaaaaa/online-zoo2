@@ -732,6 +732,25 @@ a {
   background: url("../../../assets/images/background-donate.jpg");
   background-repeat: no-repeat;
   background-position: contain;
+  height: 390px;
+}
+@media (max-width: 1000px) {
+  .promo2 {
+    background-position: 20%;
+  }
+}
+@media (max-width: 640px) {
+  .promo2 {
+    background-size: cover;
+    background-position: 33%;
+  }
+}
+@media (max-width: 320px) {
+  .promo2 {
+    background-position: 35% 0%;
+    background-position: cover;
+    height: 186px;
+  }
 }
 
 .promo2__wrapper {
@@ -742,14 +761,55 @@ a {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   padding: 40px 0 180px;
 }
+@media (max-width: 1000px) {
+  .donations {
+    padding: 40px 0 30px;
+  }
+}
+@media (max-width: 320px) {
+  .donations {
+    padding: 40px 0 20px;
+  }
+}
+@media (max-width: 640px) {
+  .donations {
+    padding: 30px 0 46px;
+  }
+}
 
 .about-help {
   color: #FFFFFF;
 }
 
+@media (max-width: 1000px) {
+  .help_title {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .help_title {
+    width: 100%;
+  }
+}
+
+.help_text {
+  margin: 0;
+}
+
 .donations-info {
   color: #FE9013;
-  padding: 0 0 40px;
+  padding: 0 0 60px;
+}
+@media (max-width: 1000px) {
+  .donations-info {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 640px) {
+  .donations-info {
+    padding: 30px 0;
+  }
 }
 
 .donation-cheme {
@@ -758,11 +818,55 @@ a {
   backdrop-filter: blur(2px);
   border-radius: 20px;
 }
+@media (max-width: 1000px) {
+  .donation-cheme {
+    padding: 20px 44px 25px;
+  }
+}
+@media (max-width: 640px) {
+  .donation-cheme {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 320px) {
+  .donation-cheme {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .pick-friend__description {
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .pick-friend__description h4 {
+    font-size: 1.6rem;
+  }
+}
+
+.pick-friend_title {
+  color: #FE9013;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 320px) {
+  .pick-friend_title {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+}
 
 .cheme-donate {
   padding: 0 229px 48px 0;
   display: flex;
   justify-content: end;
+}
+@media (max-width: 1000px) {
+  .cheme-donate {
+    padding: 0;
+    justify-content: center;
+  }
 }
 
 .cheme-block1 {
@@ -783,9 +887,20 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
+@media (max-width: 320px) {
+  .number-eat {
+    font-size: 40.6px;
+  }
+}
 
 .eat-description {
   padding: 11px 0 0;
+}
+@media (max-width: 320px) {
+  .eat-description {
+    font-size: 9px;
+    white-space: nowrap;
+  }
 }
 
 .cheme-block2 {
@@ -795,11 +910,26 @@ a {
   align-items: center;
   margin-right: 64px;
 }
+@media (max-width: 320px) {
+  .cheme-block2 {
+    margin-right: 36px;
+    height: 138px;
+  }
+}
 
 .cheme-block3 {
   background: url("../../../assets/icons/panda_widget1.svg");
   width: 284px;
   height: 246px;
+}
+@media (max-width: 320px) {
+  .cheme-block3 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 138px;
+    background-position: center;
+  }
 }
 
 .amound {
@@ -810,6 +940,17 @@ a {
   background: url("../../../assets/icons/progress_bar.jpg") no-repeat;
   width: 100%;
   height: 40px;
+}
+@media (max-width: 640px) {
+  .donation-line {
+    background: url("../../../assets/icons/progress_bar-1000.jpg") no-repeat;
+  }
+}
+@media (max-width: 320px) {
+  .donation-line {
+    background-size: contain;
+    height: 20px;
+  }
 }
 
 .donation-money {
@@ -827,46 +968,110 @@ a {
   line-height: 140%;
   text-transform: uppercase;
 }
+@media (max-width: 320px) {
+  .size-money {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .size-money5000 {
+    display: none;
+  }
+}
 
 .size-money2000 {
   position: relative;
   left: -15px;
+}
+@media (max-width: 640px) {
+  .size-money2000 {
+    display: none;
+  }
 }
 
 .size-money1000 {
   position: relative;
   left: -20px;
 }
+@media (max-width: 640px) {
+  .size-money1000 {
+    display: none;
+  }
+}
 
 .size-money500 {
   position: relative;
   left: -25px;
+}
+@media (max-width: 640px) {
+  .size-money500 {
+    left: 0;
+  }
 }
 
 .size-money250 {
   position: relative;
   left: -20px;
 }
+@media (max-width: 640px) {
+  .size-money250 {
+    left: 0;
+  }
+}
 
 .size-money100 {
   position: relative;
   left: -10px;
+}
+@media (max-width: 640px) {
+  .size-money100 {
+    left: 0px;
+  }
+}
+@media (max-width: 320px) {
+  .size-money100 {
+    left: 10px;
+  }
 }
 
 .size-money50 {
   position: relative;
   left: 0px;
 }
+@media (max-width: 640px) {
+  .size-money50 {
+    left: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .size-money50 {
+    left: 20px;
+  }
+}
 
 .size-money25 {
   position: relative;
   left: 20px;
+}
+@media (max-width: 320px) {
+  .size-money25 {
+    left: 40px;
+  }
 }
 
 .period_container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.period_container h5 {
+  padding-top: 30px;
+}
+@media (max-width: 320px) {
+  .period_container h5 {
+    white-space: nowrap;
+  }
 }
 
 .donation-input {

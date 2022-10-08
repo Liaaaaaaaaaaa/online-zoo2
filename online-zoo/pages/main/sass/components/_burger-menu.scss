@@ -1,0 +1,39 @@
+.logo-band {
+    color: $color-brand2;
+    border: 1px solid $color-brand2;
+    width: 65.6px;
+}
+
+.logo__burger-menu {
+    display: none;
+    margin-bottom: 30.4px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.burger-cross {
+    width: 20px;
+
+}
+
+._active-menu {
+    top: 0;
+    right: 0;
+    transition: top 0.9s ease 0.3s;
+    box-shadow: 0 200px 0 10000px rgba(0, 0, 0, 0.5);
+}
+
+.signature-none {
+display: none;
+color: $color-text;
+}
+
+.display-flex {
+display: flex;
+}
+
+.display-block {
+    display: block;
+    height: 100%;
+}

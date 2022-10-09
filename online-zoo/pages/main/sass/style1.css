@@ -901,24 +901,50 @@ a {
 
 .layout-3-column {
   display: grid;
-  grid-template: "pets__switch1 panda eagles gorillas pets__switch2" "pets__switch1 alligators cheetahs penquins pets__switch2";
-  grid-gap: 30px;
   grid-area: "layout-3-column";
+  grid-template: "pets__switch1  pets_container pets__switch2" "pets__switch1 pets_container pets__switch2";
+  grid-gap: 30px;
   align-items: center;
 }
 @media (max-width: 1000px) {
   .layout-3-column {
-    grid-template-areas: "panda panda eagles eagles cheetahs cheetahs" "pets__switch1 pets__switch1 pets__switch1 pets__switch2 pets__switch2 pets__switch2" "gorillas gorillas alligators alligators penquins penquins";
+    grid-gap: 0;
   }
 }
 @media (max-width: 640px) {
   .layout-3-column {
     overflow: hidden;
-    grid-gap: 11px 28px;
+    grid-gap: 0;
   }
 }
 @media (max-width: 320px) {
   .layout-3-column {
+    grid-gap: 0;
+  }
+}
+
+.pets_container {
+  grid-area: "pets_container";
+  display: grid;
+  grid-template: "panda eagles gorillas" "alligators cheetahs penquins";
+  grid-gap: 30px;
+  align-items: center;
+  grid-area: 1/2/4/5;
+}
+@media (max-width: 1000px) {
+  .pets_container {
+    grid-template: "panda eagles cheetahs" "gorillas alligators penquins";
+    grid-row-gap: 92px;
+  }
+}
+@media (max-width: 640px) {
+  .pets_container {
+    overflow: hidden;
+    grid-gap: 92px 28px;
+  }
+}
+@media (max-width: 320px) {
+  .pets_container {
     grid-gap: 20px 28px;
     grid-template-areas: "panda" "eagles" "gorillas" "alligators";
   }
@@ -960,14 +986,14 @@ a {
 }
 @media (max-width: 1000px) {
   .pets__switch1 {
-    grid-area: 2/3/3/4;
-    justify-self: start;
+    position: absolute;
+    margin: auto;
+    left: 368px;
   }
 }
 @media (max-width: 640px) {
   .pets__switch1 {
-    grid-area: 2/2/3/3;
-    margin: 0 0 8px 0;
+    left: 240px;
   }
 }
 
@@ -978,14 +1004,15 @@ a {
 }
 @media (max-width: 1000px) {
   .pets__switch2 {
-    grid-area: 2/4/3/5;
     justify-self: end;
+    position: absolute;
+    margin: auto;
+    right: 338px;
   }
 }
 @media (max-width: 640px) {
   .pets__switch2 {
-    grid-area: 2/3/3/4;
-    margin: 0 0 8px 0;
+    right: 240px;
   }
 }
 

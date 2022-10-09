@@ -1,6 +1,7 @@
 .wrapper {
     max-width: $content-width;
     margin:  auto;
+    
     @include media-small_desktop {
         padding: 0 30px;
     }

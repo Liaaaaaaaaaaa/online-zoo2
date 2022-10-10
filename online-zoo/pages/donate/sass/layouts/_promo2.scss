@@ -1,0 +1,26 @@
+.promo2 {
+    background: url("../../../assets/images/background-donate.jpg");
+    background-repeat: no-repeat;
+    background-position: contain;
+    height: 390px;
+
+    @include media-small_desktop {
+        background-position: 20%;
+    }
+
+    @include media-tablet {
+        background-size: cover ;
+        background-position: 33%;
+    }
+
+    @include media-mobile {
+        background-position: 35% 0%;
+        background-position: cover;
+        height: 186px;
+    }
+}
+
+.promo2__wrapper {
+    height: 462px;
+
+}

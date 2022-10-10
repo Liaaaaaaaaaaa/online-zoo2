@@ -1,0 +1,23 @@
+%transition {
+    transition: all .2s ease-out .10s;
+    // -webkit-transition:all .0s ease-out; 
+}
+
+%hover-brand {
+    a:hover {
+        color: $color-brand2;
+    }
+}
+
+%hover-network {
+    a:hover {
+        color: $color-green;
+
+        .network__icon {
+            background: $color-green;
+            @extend %transition
+        }
+    }
+
+}
+

@@ -1,0 +1,204 @@
+.pick-friend {
+    background: $color-background;
+    color: $color-text;
+    padding: 69px 0 100px;
+    max-width: $max-width;
+    margin: auto;
+    @include media-small_desktop {
+        padding: 30px 30px 50px; 
+    }
+    @include media-tablet {
+        padding: 20px 0; 
+    }
+    @include media-mobile {
+        padding: 20px 10px; 
+    }
+}
+
+.pick__wrapper {
+    background: $color-pick;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 40px 52px 0 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include media-small_desktop {
+        padding: 30px 48px 50px;
+    }
+    @include media-tablet {
+        padding: 10px 20px 0;
+    }
+}
+
+.pick-friend_title {
+    color: $color-brand2;
+    text-align: center;
+    margin: 0 0 30px 0;
+    @include media-small_desktop {
+        margin: 0 0 20px 0;
+    }
+    @include media-tablet {
+        font-size: 4.2rem; 
+    }
+    @include media-mobile {
+       font-size: 2.4rem; 
+    }
+}
+
+.pick-friend__description {
+    padding: 0 0 60px 0;
+    width: 100%;
+
+    @include media-small_desktop {
+        padding: 0 0 40px 0;
+    }
+    @include media-tablet {
+        padding: 10px 0 30px;
+    }
+   
+
+    h4 {
+        margin: 0 0 40px 0;
+        @include media-tablet {
+            font-size: 2.2rem; 
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
+        @include media-mobile {
+            font-size: 1.8rem; 
+        }
+       
+    }
+
+    h5 {
+        margin: 0 0 10px 0;
+        width: 100%;
+        &:last-child {
+            width: 863px;
+
+            @include media-tablet {
+                width: 100%;
+            }
+            @include media-mobile {
+                display: none; 
+            }
+         
+        }
+        a {
+            text-decoration: underline;
+            text-decoration-color: $color-brand2;
+        }
+    }
+}
+
+// .pick-friend__scheme {
+
+// }
+.scheme__container {
+    padding: 51px 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    @include media-small_desktop {
+        padding: 40px 0 70px;
+    }
+    @include media-tablet {
+        padding: 20px 0 40px;
+        justify-content: flex-start;
+    }
+    @include media-mobile{
+        flex-direction: column;
+        padding: 0 0 30px;
+    }
+    
+}
+
+.scheme-element {
+    width: 168px;
+    @include media-tablet {
+        margin-right: 20px;
+     }
+     @include media-mobile{
+        margin:  20px 0  20px; 
+    }
+}
+
+.scheme-element:last-child {
+    @include media-tablet   {
+        margin-right: 0px;
+     }
+     @include media-mobile   {
+        margin-bottom: 0;
+     }
+}
+
+.img-container1 {
+    width: 168px;
+    height: 168px;
+    background: #FFFFFF url("../../../assets/icons/scheme-img1.svg") 50% no-repeat;
+    display: inline-block;
+}
+
+.img-container2 {
+    width: 168px;
+    height: 168px;
+    background: #FFFFFF url("../../../assets/icons/scheme-img2.svg") 50% no-repeat;
+}
+
+.img-container3 {
+    width: 168px;
+    height: 168px;
+    background: #FFFFFF url("../../../assets/icons/scheme-img3.svg") 50% no-repeat;
+}
+
+
+
+.scheme-description {
+    padding: 30px 0 0 0;
+    @include media-mobile{
+        padding: 10px 0 20px; 
+    }
+}
+
+
+.next {
+    width: 130px;
+    height: 168px;
+    background: url("../../../assets/icons/next.svg") 50% no-repeat;
+  }
+  @media (max-width: 640px) {
+    .next {
+      background: url("../../../assets/icons/pick-arrow.svg") 50% no-repeat;
+      background-position: top;
+      position: absolute;
+      top: 46.5%;
+      left: 24%;
+      width: 15%;
+    }
+  }
+  @media (max-width: 320px) {
+    .next {
+      transform: rotate(90deg);
+      width: 55%;
+      top: 37%;
+      left: 32%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .next2 {
+      left: 58%;
+    }
+  }
+  @media (max-width: 640px) and (max-width: 320px) {
+    .next2 {
+      top: 57%;
+      left: 32%;
+    }
+  }
+.pick-friend__button {
+    padding: 0 0 59px;
+}

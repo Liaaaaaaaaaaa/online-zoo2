@@ -1,0 +1,29 @@
+.header {
+    background: $color-dark;
+    padding: 14px 0;
+    @include media-tablet {
+        padding: 3px 0;
+    }
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @extend %hover-brand;
+}
+
+
+
+.signature {
+    color: $color-light;
+    font-weight: 500;
+    line-height: 140%;
+    text-decoration: none;
+    @include media-tablet {
+        display:none;
+    }
+    @include media-mobile {
+        display:none;
+    }
+}

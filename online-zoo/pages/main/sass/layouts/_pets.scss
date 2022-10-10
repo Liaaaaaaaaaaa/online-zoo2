@@ -22,6 +22,8 @@
         "pets__button";
     grid-row-gap: 50px;
 
+    // overflow: hidden;
+
     @include media-tablet {
         grid-row-gap: 60px;
     }
@@ -33,14 +35,16 @@
 
 
 .layout-3-column {
-    display: grid;
+    // display: grid;
+    display: flex;
     grid-area: "layout-3-column";
-    // grid-template: "pets__switch1 pets_container pets_container pets_container pets__switch2"
-    // "pets__switch1 pets_container pets_container pets_container pets__switch2";
     grid-template: "pets__switch1  pets_container pets__switch2"
         "pets__switch1 pets_container pets__switch2";
     grid-gap: 30px;
     align-items: center;
+    overflow: hidden;
+    width: 130%;
+    margin-bottom: 80px;
 
     @include media-small_desktop {
         // grid-template-areas: "pets_container"
@@ -49,7 +53,7 @@
         //     "pets__switch1 pets__switch1 pets__switch1 pets__switch2 pets__switch2 pets__switch2"
         //     "pets_container2 pets_container2 pets_container2 pets_container2 pets_container2 pets_container2";
         //     // grid-row-gap: 92px;
-grid-gap: 0;
+        grid-gap: 0;
     }
 
     @include media-tablet {
@@ -65,15 +69,27 @@ grid-gap: 0;
     }
 }
 
+.pets-container__wrapper {
+//  overflow: hidden;
+ display: flex;
+ position: relative;
+ left:0;
+ @extend %transition;
+ right: 0;
+
+}
 .pets_container {
     grid-area: "pets_container";
     display: grid;
     grid-template: "panda eagles gorillas"
         "alligators cheetahs penquins";
     grid-gap: 30px;
-    // overflow: hidden;
+   
     align-items: center;
     grid-area: 1/2/4/5;
+    position: relative;
+ left:0;
+ right: 0;
 
     @include media-small_desktop {
         grid-template: "panda eagles cheetahs"
